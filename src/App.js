@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import HomePage from "./pages/HomePage/HomePage";
+
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header/Header";
+import AddArtist from "./pages/AddArtist/AddArtist";
+import AddEvent from "./pages/AddEvent/AddEvent";
+import AddArtWork from "./pages/AddArtWork/AddArtWork";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="home">
+        <Header />
+        <div className="homePanel">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="event" element={<AddEvent />} />
+            <Route path="artist" element={<AddArtist />} />
+            <Route path="artwork" element={<AddArtWork />} />
+          </Routes>
+        </div>
+      </div>
+    </>
   );
 }
 

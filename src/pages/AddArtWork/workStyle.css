@@ -1,0 +1,50 @@
+.mainList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+  gap: 20px;
+}
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputTitleList {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.input {
+  width: 400px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.inputTitle {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+}
+.buttonAdd {
+  background: #000;
+  padding: 5px 10px;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.buttonAdd:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
